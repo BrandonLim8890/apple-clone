@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+nav {
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  border: black 1px solid;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav div {
+  padding: 10px;
+  flex: 1;
+  background: linear-gradient(#707070, #9c9c9c);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 4fr 1fr 50px;
+  gap: 2px;
+  height: 90vh;
+}
+
+.billboard {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  height: 100%;
+
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) bottom center / cover;
+ 
+}
+
+header {
+  margin: 15% auto;
+  text-align: center;
+  letter-spacing: -0.19rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header h2 {
+  font-weight: 200;
+  font-size: 4rem;
+  margin: 10px;
+}
+
+header h3 {
+  font-size: 2.75rem;
+  font-weight: 200;
+  width: 75%;
+  margin: 10px auto;
+}
+
+header h4 {
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+  font-weight: 200;
+
+}
+
+.fa {
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+
+.bottom-layer {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+}
+
+.iphone-5s {
+  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg) top center;
+}
+
+.iphone-5c {
+  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5c.jpg) top center;
+}
+
+.birthday {
+  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_30_years.jpg) top center;
+}
+
+.supplier {
+  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility.jpg) top center;
+}
+
+footer {
+  grid-column: 1 / -1;
+  margin: 0 10%;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.65rem;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0088CC;
+}
+
+
+.links {
+  justify-content: flex-end;
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.links a {
+  margin-right: .6em;
+  padding-right: .6em;
+  border-right: solid 1px #ccc;
+}
+
+.links a:last-child {
+  border: none;
+}
+
+.copy-right .first-link {
+  border-right: 1px solid #ccc;
+  margin-right: 0.6em;
+  padding-right: 0.6em;
+}
+
